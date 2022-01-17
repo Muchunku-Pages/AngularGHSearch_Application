@@ -1,18 +1,22 @@
-.container{
- margin-top:0%;
- margin-bottom: 0%;
+.body{
+  overflow:auto;
 }
 .header{
 
   background-color :rgb(135, 222, 215);
+  margin-top:0%;
+  margin-bottom: 0%;
+  padding:0;
 }
 
 h1{
+  color: rgb(50, 92, 92);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 2em;
   margin-left: 2%;
 }
 .links{
+  color:rgb(51, 85, 85);
  
   float: center; 
   margin-left: 15%;
@@ -23,7 +27,7 @@ li{
   
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.3em;
-  font-weight: 300;
+  font-weight: 500;
   list-style-type: none;
 
   display: inline;
@@ -37,6 +41,9 @@ li{
   background-repeat:no-repeat ;
   background-size: cover;
   overflow:auto;
+  padding-top:0%;
+  padding-bottom: 0%;
+  
 }
  
   

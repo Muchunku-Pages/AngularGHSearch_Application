@@ -1,4 +1,4 @@
-<div class="container">
+<div class="body">
   <div class="header">
     <h1 class="top">NG-HUB SEARCH </h1>
     <header>
@@ -12,6 +12,21 @@
      </header>
    </div>
   
-<div class="main"></div>
+<div class="main">
+  <div class="d-flex justify-content-center align-items-center">
+    <p>Type In <span class="user">A GitHub Username</span>  
+      in the input box below, to find <span class="user">
+      a GitHub User Profile</span>  and 
+      <span class="user">its corresponding Repositories</span></p>
+  </div>
+  <form [formGroup]="hubSearchForm" (submit)= "hubSearchForm($event)" class="d-flex align-self-center p-3 w-100">
+    <div class="flex-fill">
+      <input class="form-control" type="text" formControlName="hubSearch">
+    </div>
+  <div>
+    <button class="btn btn-dark">SEARCH</button>
+  </div>
+</form>
+</div>
 </div>
 
