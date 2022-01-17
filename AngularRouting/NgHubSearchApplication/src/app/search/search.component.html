@@ -19,12 +19,12 @@
       a GitHub User Profile</span>  and 
       <span class="user">its corresponding Repositories</span></p>
   </div>
-  <form [formGroup]="hubSearchForm" (submit)= "hubSearchForm($event)" class="d-flex align-self-center p-3 w-100">
+  <form [formGroup]="hubSearchForm" (submit)= "searchUsername($event)" class="d-flex align-self-center p-3 w-100">
     <div class="flex-fill">
       <input class="form-control" type="text" formControlName="hubSearch">
     </div>
   <div>
-    <button class="btn btn-dark">SEARCH</button>
+    <button class="btn btn-success">SEARCH</button>
   </div>
 </form>
 </div>

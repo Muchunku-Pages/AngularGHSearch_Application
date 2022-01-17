@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms'
+
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -9,7 +10,7 @@ export class SearchComponent implements OnInit {
 
  hubSearchForm:FormGroup = new FormGroup({ 
    
-  hubSearch: new FormControl("")
+   hubSearch: new FormControl("")
 
  })
 

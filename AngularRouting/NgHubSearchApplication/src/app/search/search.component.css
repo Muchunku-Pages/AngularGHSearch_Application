@@ -6,7 +6,6 @@
   background-color :rgb(135, 222, 215);
   margin-top:0%;
   margin-bottom: 0%;
-  padding:0;
 }
 
 h1{
@@ -17,7 +16,6 @@ h1{
 }
 .links{
   color:rgb(51, 85, 85);
- 
   float: center; 
   margin-left: 15%;
   margin-right: 5%;
