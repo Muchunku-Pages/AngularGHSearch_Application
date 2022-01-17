@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl, FormGroup} from '@angular/forms'
+import {FormControl, FormGroup} from '@angular/forms';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-search',
@@ -14,9 +15,21 @@ export class SearchComponent implements OnInit {
 
  })
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit(): void {
   }
+
+  searchUsername(event:any){
+    event.preventDefault();
+
+    let githubUsername = this.hubSearchForm.get('hubSearchEntry')
+
+    this.router.navigate(["/user-profile",githubUsername])
+
+
+
+  }
+
 
 }
