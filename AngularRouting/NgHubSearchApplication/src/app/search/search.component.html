@@ -1,13 +1,9 @@
 <div class="body">
   <div class="header">
-    <h1 class="top">NG-HUB SEARCH </h1>
+    <h1 class="h1">NG-HUB SEARCH</h1><br>
+    <span class="current"><h3>GitHub User Search HomePage</h3></span>
     <header>
       <nav class="links">
-        <ul class="nav">
-          <li><a href="#"></a>SEARCH HOME</li>
-          <li><a href="#"></a>USER PROFILE</li>
-          <li><a href="#"></a>REPOSITORY DETAILS</li>
-        </ul>
       </nav>
      </header>
    </div>
@@ -19,14 +15,16 @@
       a GitHub User Profile</span>  and 
       <span class="user">its corresponding Repositories</span></p>
   </div>
-  <form [formGroup]="hubSearchForm" (submit)= "searchUsername($event)" class="d-flex align-self-center p-3 w-100">
+  <div class="d-flex align-self-center p-3 w-100">
+  <form [formGroup]:any ="hubSearchForm" (submit)= "searchUsername($event)">
     <div class="flex-fill">
-      <input class="form-control" type="text" formControlName="hubSearch">
+      <input class="form-control" type="text" formControlName="hubSearchEntry">
     </div>
   <div>
     <button class="btn btn-success">SEARCH</button>
   </div>
 </form>
+</div>
 </div>
 </div>
 

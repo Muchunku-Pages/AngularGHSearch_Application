@@ -5,7 +5,7 @@ import {UserProfileComponent} from './user-profile/user-profile.component';
 import {RepositoryDetailsComponent} from './repository-details/repository-details.component';
 
 const routes: Routes = [
-{ path:"", component:SearchComponent },
+{path:"", component:SearchComponent },
 
 {path:"user-profile/:githubUsername", component:UserProfileComponent},
 

@@ -11,7 +11,7 @@ export class SearchComponent implements OnInit {
 
  hubSearchForm:FormGroup = new FormGroup({ 
    
-   hubSearch: new FormControl("")
+   hubSearchEntry: new FormControl("")
 
  })
 
