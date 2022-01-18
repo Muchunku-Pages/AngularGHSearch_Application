@@ -24,7 +24,7 @@ export class SearchComponent implements OnInit {
     event.preventDefault();
 
     let githubUsername = this.hubSearchForm.get('hubSearchEntry')
-
+    console.log(githubUsername)
     this.router.navigate(["/user-profile",githubUsername])
 
 

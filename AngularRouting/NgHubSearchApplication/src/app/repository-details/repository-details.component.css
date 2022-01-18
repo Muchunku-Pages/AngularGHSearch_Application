@@ -1,0 +1,45 @@
+.title{
+  color: rgb(50, 92, 92);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 2em;
+  margin-left: 2%;
+
+  }
+
+.current{
+  color: rgb(50, 92, 92);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-left: 15%;
+ 
+}
+
+.links{
+  color:rgb(51, 85, 85);
+  float: center; 
+  margin-left: 15%;
+  margin-right: 5%;
+
+  }
+
+.li{
+  
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight: 500;
+  list-style-type: none;
+  display: inline;
+  margin: 3.5em; 
+  }
+
+.main{
+  height:580px;
+  width:auto;
+  background-image: url(/assets/images/repositorydetails.jpg);
+  background-repeat:no-repeat ;
+  background-size: cover;
+  overflow:auto;
+  padding-top:0%;
+  padding-bottom: 0%;
+}
