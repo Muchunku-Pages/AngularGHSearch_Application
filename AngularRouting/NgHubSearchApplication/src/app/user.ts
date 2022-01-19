@@ -4,6 +4,7 @@ export class User {
   bio:String;
   avatar_url:string
   name:String;
+  location:String;
   company:String;
   followers:number;
   following:number;
@@ -13,6 +14,7 @@ constructor( login:String,
               bio:String,
              avatar:string,
               name:String,
+              location:String,
               company:String,
               followers:number,
               following:number,
@@ -22,6 +24,7 @@ constructor( login:String,
     this.login = login;
     this.avatar_url = avatar;
     this.name= name;
+    this.location = location;
     this.company=company;
     this.followers=followers;
     this.following=following;

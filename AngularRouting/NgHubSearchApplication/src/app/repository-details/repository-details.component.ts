@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { Repository } from 'src/app/repository';
+import { User } from 'src/app/user';
+import { InfoRetrievalService} from 'src/services/info-retrieval.service';
+
 
 @Component({
   selector: 'app-repository-details',
@@ -7,9 +12,38 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RepositoryDetailsComponent implements OnInit {
 
-  constructor() { }
 
-  ngOnInit(): void {
-  }
+user!: User;
+repositories!: Repository[];
+active = 1;
+
+constructor( private route:ActivatedRoute, private infoRetrievalService:InfoRetrievalService) { }
+
+ngOnInit(): void {
+
+this.route.params.subscribe(param=>{
+  
+  console.log(param);
+
+this.infoRetrievalService.getProfileInfo(param.user).then((response:User)=>{
+
+  console.log(response);
+
+   this.user = response;
+   
+this.infoRetrievalService.getRepositories(response.repos_url).then((repositoryResponse:Repository[])=>{
+
+  console.log(repositoryResponse);
+
+  this.repositories = repositoryResponse;
+
+       }) 
+
+    })
+    
+  })
+
+
+}
 
 }

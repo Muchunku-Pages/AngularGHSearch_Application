@@ -15,15 +15,15 @@ export class UserProfileComponent implements OnInit {
   repositories!: Repository[];
   active = 1;
 
-  constructor( activeRoute:ActivatedRoute, private infoRetrievalService:InfoRetrievalService) { }
+  constructor(private route:ActivatedRoute, private infoRetrievalService:InfoRetrievalService) { }
 
   ngOnInit(): void {
   
-  this.activeRoute.params.subscribe(param=>{
+  this.route.params.subscribe(param=>{
     
     console.log(param);
   
-  this.infoRetrievalService.getProfileInfo(param.username).then((response:User)=>{
+  this.infoRetrievalService.getProfileInfo(param.user).then((response:User)=>{
 
     console.log(response);
 
