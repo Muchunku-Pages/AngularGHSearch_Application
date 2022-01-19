@@ -43,3 +43,23 @@
   padding-top:0%;
   padding-bottom: 0%;
 }
+
+.repos{
+  height: calc(100vh - 200px);
+  overflow: hidden;
+  overflow-y: auto;
+  background-color: antiquewhite;
+}
+#overview{
+  background-color:rgb(135, 222, 215);
+}
+ul li{
+  background-color: darkcyan;
+
+}
+
+.card{
+  width:auto;
+  overflow:auto;
+
+}
