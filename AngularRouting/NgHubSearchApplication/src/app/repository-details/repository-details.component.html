@@ -1,12 +1,12 @@
 <div class="body">
     <div class="header">
-      <h1 class="title">NG-HUB SEARCH </h1><br>
-      <span class="current"><h3>GitHub User Repository Details</h3></span>
+      <h1 class="title">NG-HUB SEARCH </h1>
+      <div class="current"><h3>Hub-User Repository Details</h3></div>
       <header>
         <nav class="links">
           <ul class="nav">
-            <li class="li"><a href="#" routerlink="">SEARCH HOME</a></li>
-            <li><a href="#" routerlink="user-profile">USER PROFILE</a></li>
+            <li class="li"><a href="#" routerlink="">HUB-SEARCH HOME</a></li>
+            <li class="li"><a href="#" routerlink="user-profile">USER PROFILE</a></li>
           </ul>
         </nav>
        </header>
@@ -53,12 +53,12 @@
                       {{user.bio}}
                     </div>
                   </div>
-                                 </ng-template>
+                </ng-template>
               </li>
               <li [ngbNavItem]="2">
                 <a ngbNavLink>Repositories</a>
                 <ng-template ngbNavContent>
-                  <div class="repos">
+                  <div class="repos"><span><h2>REPOSITORIES</h2></span>
                     <div class="row">
                       <div *ngFor="let repo of repositories" class="col-md-4 p-3">
                       <div class="card" style="width: 18rem;">

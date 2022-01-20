@@ -1,8 +1,9 @@
 .body{
   overflow:auto;
+ 
 }
 .header{
-
+ 
   background-color :rgb(135, 222, 215);
   margin-top:0%;
   margin-bottom: 0%;
@@ -15,12 +16,19 @@
   margin-left: 2%;
 }
 
+.inst{
+  
+  margin-top: 15%;
+  margin-left: 4%;
+  font-weight: 500;
+}
+
 .current{
   color: rgb(50, 92, 92);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  font-size: 1.5em;
+  font-size: 2em;
   font-weight: 600;
-  margin-left: 15%;
+  margin-left: 20%;
  
 }
 
@@ -42,12 +50,13 @@
   }
 
 .main{
-  height:580px;
-  width:auto;
+ 
   background-image: url(/assets/images/gitsearch.jpg);
   background-repeat:no-repeat ;
   background-size: cover;
   overflow:auto;
+  height:550px;
+  width:auto;
   padding-top:0%;
   padding-bottom: 0%;
   

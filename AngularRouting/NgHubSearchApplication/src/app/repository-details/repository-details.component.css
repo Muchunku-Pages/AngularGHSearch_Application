@@ -6,39 +6,41 @@
 
   }
 
+.header{
+
+  background-color :rgb(135, 222, 215);
+  margin-top:0%;
+  margin-bottom: 0%;
+
+  }
+
 .current{
   color: rgb(50, 92, 92);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.5em;
   font-weight: 600;
-  margin-left: 15%;
+  margin-left: 20%;
  
 }
 
-.links{
-  color:rgb(51, 85, 85);
-  float: center; 
-  margin-left: 15%;
-  margin-right: 5%;
-
-  }
 
 .li{
-  
+  color: rgb(50, 92, 92);
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-size: 1.3em;
   font-weight: 500;
   list-style-type: none;
   display: inline;
-  margin: 3.5em; 
+  margin-left: 35%;
   }
 
 .main{
-  height:580px;
-  width:auto;
+  
   background-image: url(/assets/images/repositorydetails.jpg);
   background-repeat:no-repeat ;
   background-size: cover;
+  height:530px;
+  width:auto;
   overflow:auto;
   padding-top:0%;
   padding-bottom: 0%;
@@ -53,10 +55,9 @@
 #overview{
   background-color:rgb(135, 222, 215);
 }
-ul li{
-  background-color: darkcyan;
 
-}
+
+
 
 .card{
   width:auto;
