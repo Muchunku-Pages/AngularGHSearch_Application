@@ -38,10 +38,23 @@
   display: inline;
   margin-left: 35%;
    }
+a{
+
+  text-decoration:none;
+}
+
+a:hover{
+
+  color:gold;
+}
+
+a:active {
+
+  color:yellowgreen;
+}
 
 
-
-  .main{
+.main{
  
   background-image: url(/assets/images/userprofiles.jpg);
   background-repeat:no-repeat ;

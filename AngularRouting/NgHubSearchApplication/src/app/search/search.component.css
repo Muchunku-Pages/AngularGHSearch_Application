@@ -32,12 +32,7 @@
  
 }
 
-.links{
-  color:rgb(51, 85, 85);
-  float: center; 
-  margin-left: 15%;
-  margin-right: 5%;
-  }
+
 
 .li{
   
@@ -49,13 +44,15 @@
   margin: 3.5em; 
   }
 
+  
+
 .main{
  
   background-image: url(/assets/images/gitsearch.jpg);
   background-repeat:no-repeat ;
   background-size: cover;
   overflow:auto;
-  height:550px;
+  height:530px;
   width:auto;
   padding-top:0%;
   padding-bottom: 0%;
@@ -63,3 +60,16 @@
 }
  
   
+.marquee{
+  color: rgb(50, 92, 92);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 1.3em;
+  font-weight: 500;
+  display: inline;
+  margin-left: 20%;
+   }
+
+#marword{
+
+  color:silver;
+}   

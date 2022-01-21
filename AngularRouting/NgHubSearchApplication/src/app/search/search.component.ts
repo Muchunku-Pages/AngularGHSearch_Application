@@ -9,8 +9,7 @@ import {Router} from '@angular/router';
 })
 export class SearchComponent implements OnInit {
 
- hubSearchForm:FormGroup = new FormGroup({ 
-   
+ hubSearchForm:FormGroup = new FormGroup({  
    hubSearchEntry: new FormControl("")
 
  })
