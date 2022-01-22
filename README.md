@@ -48,7 +48,7 @@ A live link to the website is unfortunately  unavailable in the Github repositor
 
 * Bootstrap- Special CSS libraries used to generate standardized pre-styled HTML Elements and add predictable formatting when styling webpages template elements.
 
-##Known Bugs
+##Known Bugs##
 
 There's a major bug as a result of additional RXJS extension modules installed into the core Angular framework files which was in conflict with the installed Angular CLI version in the course of the NgHubSearch Application's development, preventing any further manipulation of the Application by Angular including preventing the building and deployment of the application.
 
