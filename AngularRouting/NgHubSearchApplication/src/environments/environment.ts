@@ -5,9 +5,9 @@
 export const environment = {
   production: false,
 
-  clientId:'Mwendantu-CastDynamic',
+  clientId:'Muchunku-Pages',
   
-  clientSecret:'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'
+  clientKey:'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'
 };
 
 /*

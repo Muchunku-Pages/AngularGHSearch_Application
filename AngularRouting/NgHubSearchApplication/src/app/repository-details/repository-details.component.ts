@@ -15,7 +15,7 @@ export class RepositoryDetailsComponent implements OnInit {
 
 user!: User;
 repositories!: Repository[];
-active = 1;
+
 
 constructor( private route:ActivatedRoute, private infoRetrievalService:InfoRetrievalService) { }
 
@@ -24,26 +24,29 @@ ngOnInit(): void {
 this.route.params.subscribe(param=>{
   
   console.log(param);
-
-this.infoRetrievalService.getProfileInfo(param.user).then((response:User)=>{
-
-  console.log(response);
-
-   this.user = response;
    
-this.infoRetrievalService.getRepositories(response.repos_url).then((repositoryResponse:Repository[])=>{
+this.infoRetrievalService.getRepositories(param.repositories).then((repositoryResponse:Repository[])=>{
 
   console.log(repositoryResponse);
 
-  this.repositories = repositoryResponse;
+return this.repositories = repositoryResponse;
 
-       }) 
-
-    })
+     })
     
-  })
+   })
+  
+  }
 
+ }
 
-}
+//Alternative Syntax:
+ 
+ //resolve(); 
 
-}
+//err =>{
+    //Error
+ //   reject(err);  
+//})
+
+//}
+

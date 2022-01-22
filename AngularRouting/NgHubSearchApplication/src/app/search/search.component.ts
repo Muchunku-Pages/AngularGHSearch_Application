@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormControl, FormGroup} from '@angular/forms';
 import {Router} from '@angular/router';
 
+
 @Component({
   selector: 'app-search',
   templateUrl: './search.component.html',
@@ -22,7 +23,7 @@ export class SearchComponent implements OnInit {
   searchUsername(event:any){
     event.preventDefault();
 
-    let githubUsername = this.hubSearchForm.get('hubSearchEntry')
+    let githubUsername= this.hubSearchForm.get('hubSearchEntry')
     console.log(githubUsername)
     this.router.navigate(["/user-profile",githubUsername])
 

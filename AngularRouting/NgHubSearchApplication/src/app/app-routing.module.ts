@@ -7,7 +7,7 @@ import {RepositoryDetailsComponent} from './repository-details/repository-detail
 const routes: Routes = [
 {path:"", component:SearchComponent },
 
-//{path:"user-profile/:githubUsername", component:UserProfileComponent},
+{path:"user-profile/:githubUsername", component:UserProfileComponent},
 
 {path:"repository-details/:githubUsername", component:RepositoryDetailsComponent}
 

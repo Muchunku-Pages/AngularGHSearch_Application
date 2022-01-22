@@ -1,12 +1,12 @@
 <div class="body">
   <div class="header">
     <h1 class="title">NG HUB-SEARCH </h1>
-    <div class="current"><h3>Hub User Profile</h3></div>
+    <div class="current"><h3>Hub-User Profile</h3></div>
     <header>
       <nav class="nav">
         <ul>
           <li class="li"><a href="#" routerlink="">HUB-SEARCH HOME</a></li>
-          <li class="li"><a href="#" repository-details>REPOSITORY DETAILS</a></li>
+          <li class="li"><a href="#"routerlink="repository-details">REPOSITORY DETAILS</a></li>
         </ul>
       </nav>
      </header>
@@ -24,11 +24,9 @@
 
       <h3>{{user.login}}</h3>
     </div>
+
     <div class="flex-fill p-4">
-      <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs" id="overview">
-        <li [ngbNavItem]="1">
-          <a ngbNavLink>Overview</a>
-          <ng-template ngbNavContent>
+          <ng-template>
             <div class="row">
               <div class="col-md-3">
                 Name:
@@ -77,7 +75,8 @@
                 {{user.following}}
               </div>
             </div>
-      <div [ngbNavOutlet]="nav" class="mt-2"></div>
+     </ng-template>
+     </div>
  
 
 
